@@ -1,3 +1,4 @@
+import Artworks from "./components/Artworks"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 
@@ -8,6 +9,7 @@ const App = () => {
         <Header />
         <Hero />
       </div>
+        <Artworks />
     </div>
   )
 }
