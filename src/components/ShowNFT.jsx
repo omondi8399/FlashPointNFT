@@ -1,3 +1,4 @@
+import Identicon from "react-identicons"
 import { useState } from "react"
 import { FaTimes } from "react-icons/fa"
 import { setGlobalState, useGlobalState } from "../store"
@@ -42,7 +43,21 @@ const ShowNFT = () => {
                         <h4 className="text-white font-semibold">Title</h4>
                         <p className="text-gray-400 text-xs my-1">This is a huge paragraph</p>
 
-                        <div className="flex justify-between items-center mt-3 text-white"></div>
+                        <div className="flex justify-between items-center mt-3 text-white">
+                            <div className="flex justify-start items-center">
+                                <Identicon className="h-10 w-10 object-contain rounded-full mr-3" string="rojas" size={50} />
+                            
+                            <div className="flex flex-col justify-center items-start">
+                                <small className="text-white font-bold">@Owner</small>
+                                <small className="text-pink-800 font-semibold">0x31...03f2</small>
+                            </div>
+                            </div>
+
+                            <div className=" flex flex-col text-white ">
+                                <small>Current Price</small>
+                                <p>0.34ETH</p>
+                            </div> 
+                        </div>
                     </div>
     
                     <div className="flex justify-between items-center space-x-2">
