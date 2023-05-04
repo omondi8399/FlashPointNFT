@@ -1,4 +1,5 @@
 import Artworks from "./components/Artworks"
+import CreateNFT from "./components/CreateNFT"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
@@ -14,6 +15,7 @@ const App = () => {
         <Artworks />
         <Transactions />
         <Footer />
+        <CreateNFT />
     </div>
   )
 }
