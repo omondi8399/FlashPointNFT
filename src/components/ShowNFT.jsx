@@ -54,8 +54,8 @@ const ShowNFT = () => {
                             </div>
 
                             <div className=" flex flex-col text-white ">
-                                <small>Current Price</small>
-                                <p>0.34ETH</p>
+                                <small className="text-xs">Current Price</small>
+                                <p className="text-sm font-semibold">0.34ETH</p>
                             </div> 
                         </div>
                     </div>
