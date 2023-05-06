@@ -9,6 +9,11 @@ const imgHero= "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2l
 const ShowNFT = () => {
 
     const [modal] = useGlobalState('showModal')
+
+    const onChangePrice = () => {
+        setGlobalState('showModal', 'scale-0')
+        setGlobalState('updateModal', 'scale-100')
+    }
     
 
     const handleSubmit = () => {
@@ -65,8 +70,9 @@ const ShowNFT = () => {
                         p-2 mt-5 w-full bg-[#e32970] hover:bg-[#bd255f] rounded-full">Purchase </button>
 
                         <button className="flex justify-center items-center shadow-lg shadow-black text-white 
-                        p-2 mt-5 w-full bg-[#e32970] hover:bg-[#bd255f] rounded-full">Change Price </button>
-                    </div>
+                        p-2 mt-5 w-full bg-[#e32970] hover:bg-[#bd255f] rounded-full"
+                        onClick={onChangePrice}>Change Price </button>
+                    </div> */
                 </div>
             </div>
         </div>
