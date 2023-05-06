@@ -1,3 +1,5 @@
+import { setGlobalState } from "../store"
+
 const imgHero= "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDYvNGE4NmNmOWQtODM2Mi00YmVhLThiMzctZDEyODAxNjUxZTE1LmpwZWc=.jpg"
 
 const Artworks = () => {
@@ -34,7 +36,8 @@ const Card = ({ nft }) => (
             </div>
 
             <button className="shadow-lg shadow-black text-sm 
-            bg-[#e32970] hover:bg-[#bd255f] px-1.5 py-1 rounded-full">View Details </button>
+            bg-[#e32970] hover:bg-[#bd255f] px-1.5 py-1 rounded-full"
+            onClick={() => setGlobalState('showModal', 'scale-100')}>View Details </button>
         </div>
     </div>
 )
